@@ -45,23 +45,10 @@ merged: a p b q c   d
 </ul>
 <b>Approch to solve this problem</b>
 
-	<ul>
-		<li>
-			First We intialize two pointers i and j and a flag variable
-			and a String builder sb
-		</li>
-		
-		<li>
-			Then We check conditions in while loop either of them is exhausted.
-   			and keep addind sb to the char we obtain from input string i Th positioin if flag is true else from j th position from input string when flag is false
-   
-		</li>
-  		<li>
-    			Then we toggle the flag 
-    		</li>
-      <li>
-    			Then we add all the element of either of them in the list.
-    		</li>
-  
-	</ul>
+	&lt;ul&gt;
+    &lt;li&gt;First We intialize two pointers i and j and a flag variable and a String builder sb&lt;/li&gt;
+    &lt;li&gt;Then We check conditions in while loop either of them is exhausted. and keep addind sb to the char we obtain from input string i Th positioin if flag is true else from j th position from input string when flag is false&lt;/li&gt;
+    &lt;li&gt;Then we toggle the flag&lt;/li&gt;
+    &lt;li&gt;Then we add all the element of either of them in the list.&lt;/li&gt;
+&lt;/ul&gt;
 
