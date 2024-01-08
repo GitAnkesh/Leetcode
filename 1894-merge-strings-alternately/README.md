@@ -43,3 +43,25 @@ merged: a p b q c   d
 	<li><code>1 &lt;= word1.length, word2.length &lt;= 100</code></li>
 	<li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>
 </ul>
+<b>Approch to solve this problem</b>
+<list>
+	<ul>
+		<li>
+			First We intialize two pointers i and j and a flag variable
+			and a String builder sb
+		</li>
+		
+		<li>
+			Then We check conditions in while loop either of them is exhausted.
+   			and keep addind sb to the char we obtain from input string i Th positioin if flag is true else from j th position from input string when flag is false
+   
+		</li>
+  		<li>
+    			Then we toggle the flag 
+    		</li>
+      <li>
+    			Then we add all the element of either of them in the list.
+    		</li>
+  
+	</ul>
+</list>
