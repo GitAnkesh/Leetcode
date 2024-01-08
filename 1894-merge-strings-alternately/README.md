@@ -44,7 +44,7 @@ merged: a p b q c   d
 	<li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>
 </ul>
 <b>Approch to solve this problem</b>
-<list>
+
 	<ul>
 		<li>
 			First We intialize two pointers i and j and a flag variable
@@ -64,4 +64,4 @@ merged: a p b q c   d
     		</li>
   
 	</ul>
-</list>
+
