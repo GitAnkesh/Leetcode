@@ -31,3 +31,10 @@
 	<li><code>1 &lt;= str1.length, str2.length &lt;= 1000</code></li>
 	<li><code>str1</code> and <code>str2</code> consist of English uppercase letters.</li>
 </ul>
+<b> My approach to solve GCD of two String.</b>
+	
+<ul>
+	<li> first we do string1 + String2 and check if it is equalt to string2 + string1 if conditions fails we return empty string. </li>
+	<li> then we find of the gcd of the length of the two strings and then we return substring of string1 till length of GCD</li>
+</ul>
+
