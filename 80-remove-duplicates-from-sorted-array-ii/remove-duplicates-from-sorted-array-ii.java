@@ -1,6 +1,9 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
-         int i = 0; // Pointer for placing the next unique element
+        if(nums.length==0){
+            return 0;
+        }
+        int i = 0; // Pointer for placing the next unique element
         int count = 1; // Counter for occurrences of each element
 
         for (int j = 1; j < nums.length; j++) {
