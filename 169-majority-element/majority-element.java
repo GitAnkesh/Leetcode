@@ -1,33 +1,32 @@
 class Solution {
     public int majorityElement(int[] nums) {
-    //     Map<Integer,Integer>countMap= new HashMap<>();
-    //    for(int num :nums){
-    //     countMap.put(num,countMap.getOrDefault(num,0)+1);
-    //    }
-    //     for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
-    //         System.out.println("Number: " + entry.getKey() + ", Count: " + entry.getValue());
-    //     }
-    //     for(Map.Entry<Integer,Integer>entry: countMap.entrySet()){
-    //         if(entry.getValue()<nums.length){
-    //             return entry.getKey();
-    //         }
-    //     }
-    //     return 0;
-     Map<Integer, Integer> countMap = new HashMap<>();
-        
-        for (int num : nums) {
-            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
-        }
-
-        int majorityCount = nums.length / 2;
-        
-        for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
-            if (entry.getValue() > majorityCount) {
-                return entry.getKey();
+        Solution s = new Solution();
+        int validCandidate =s.findValidCandidate(nums);
+        int count =0;
+        for(int i =0;i<nums.length;i++){
+            if(nums[i] == validCandidate){
+                count++;
             }
         }
-        return -1; // Just a fallback, although the problem guarantees a majority element.
+        if(count>=nums.length/2){
+            return validCandidate;
+        }
+        return -1;
     }
-        
-    
+    public  int findValidCandidate(int [] arr){
+        int val=arr[0];
+        int count =1;
+        for(int i=1;i<arr.length;i++){
+            if(val ==arr[i]){
+                count++;
+            }else{
+                count--;
+            }
+            if (count ==0){
+                val =arr[i];
+                count =1;
+            }
+        }
+        return val;
+    }
 }
